@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import NavBar from './components/NavBar.jsx'
 import Home from './components/Home.jsx'
@@ -16,13 +16,13 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
+      <Switch>
         <Route path="/" element={<Home setIsContentVisible= {setIsContentVisible}/>} />
         <Route path="/about" element={<About setIsContentVisible= {setIsContentVisible}/>} />
         <Route path="/gallery" element={<Gallery setIsContentVisible= {setIsContentVisible}/>} />
         <Route path="/contact" element={<Contact setIsContentVisible= {setIsContentVisible}/>} />
         <Route path="/success" element={<Success setIsContentVisible= {setIsContentVisible}/>} />
-      </Routes>
+      </Switch>
       {isContentVisible && <Footer/>}
     </Router>
   )
