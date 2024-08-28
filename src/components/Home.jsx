@@ -145,7 +145,7 @@ export default function Home({setIsContentVisible}) {
     
     return(
 
-            <motion.div className='cont-start__home fade-in visible'>
+            <motion.div className="cont-start__home fade-in visible">
                 
                 
                 <motion.div className='cont-title-start__home'>
@@ -161,14 +161,14 @@ export default function Home({setIsContentVisible}) {
                 </motion.div>
                             
                 <motion.main initial={{opacity: 0}} animate={controlsStartHome}
-                    className= 'main__hom'e
+                    className='main__home'
                     style={{display: 'none'}}
                     >
                     
                     <div className="main-cont-1__home">
                         <section className="banner__home">
                             <div className="cont-banner__home">
-                                {/* <div className={`cont-text-banner__home`}>
+                                {/* <div className={cont-text-banner__home}>
                                     <p className="title-banner__home title-name__home">Santiago Martin</p> 
                                     <p className="title-banner__home">Official Site</p>
                                 </div> */}
@@ -191,7 +191,7 @@ export default function Home({setIsContentVisible}) {
                                     </div>
                                 </Slider>
                                 
-                                <motion.div animate={controls} className= 'cont-text-banner__home cont-text-art__home'>
+                                <motion.div animate={controls} className="cont-text-banner__home cont-text-art__home">
         
                                     <div 
                                     className='cont-text-banner__home cont'>
@@ -207,7 +207,7 @@ export default function Home({setIsContentVisible}) {
                         </section>
                     </div>
                         
-                    <motion.div animate={controlsContTwo} className= 'main-cont-2__home'>
+                    <motion.div animate={controlsContTwo} className="main-cont-2__home">
                         <section className="cont-quote-gallery__home">
                             <div className="quote__home">
                                 <div className="cont-quote__home">
