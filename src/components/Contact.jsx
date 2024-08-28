@@ -121,6 +121,8 @@ export default function Contact({setIsContentVisible}) {
                         body: JSON.stringify(inputData),
                     });
 
+                    console.log(process.env.REACT_APP_API_URL)
+
                     const contentType = response.headers.get('Content-Type');
                     let data;
 
