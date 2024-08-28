@@ -113,7 +113,7 @@ export default function Contact({setIsContentVisible}) {
                 console.log('Form is valid! Submitting data...', inputData);
                 // Lógica para enviar el formulario
                 try {
-                    const response = await fetch(`https://portfolio-site-3-frq5.onrender.com/send-email`, {
+                    const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -140,6 +140,7 @@ export default function Contact({setIsContentVisible}) {
                         setInputData({name: '', lastName:'', email:'', subject: '', message: ''})
                         setErrors({})
                         console.log(navigate)
+                        navigate('/success')
                     } else {
                         const backEndErrors = {};
                         data.errors.forEach(error => {
@@ -151,7 +152,6 @@ export default function Contact({setIsContentVisible}) {
                 } catch (err) {
                     console.log(err);
                 }
-                navigate('/success')
 
             } else {
                 console.log('Form is invalid!', errors);
