@@ -113,7 +113,7 @@ export default function Contact({setIsContentVisible}) {
                 console.log('Form is valid! Submitting data...', inputData);
                 // Lógica para enviar el formulario
                 try {
-                    const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
+                    const response = await fetch(`${process.env.REACT_APP_API_URL}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
