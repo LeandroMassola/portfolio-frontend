@@ -151,7 +151,7 @@ export default function Contact({setIsContentVisible}) {
                 } catch (err) {
                     console.log(err);
                 }
-                navigate('/success')
+                /* navigate('/success') */
 
             } else {
                 console.log('Form is invalid!', errors);
