@@ -133,7 +133,7 @@ export default function Home({setIsContentVisible}) {
         const scrollY = window.scrollY
 
         controls.start({
-            opacity: scrollY > 250 ? 1 : 0,
+            opacity: scrollY > 200 ? 1 : 0,
             transition: {duration: 1}
         })
     }
@@ -162,7 +162,7 @@ export default function Home({setIsContentVisible}) {
                             
                 <motion.main initial={{opacity: 0}} animate={controlsStartHome}
                     className='main__home'
-                    style={{display: 'none'}}
+                    style={startIsVisible ? {display:'none'} : {display:'flex'}}
                     >
                     
                     <div className="main-cont-1__home">

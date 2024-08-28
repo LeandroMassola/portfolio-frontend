@@ -217,7 +217,7 @@
 
 /*Media queries*/
 
-@media(min-width: 768px) {
+/*  */
 
     .cont-title-start__home {
         margin-top: 10%;
@@ -273,6 +273,8 @@
         border-radius: 3%;
         margin-top: 10%;
     }
+
+    @media(min-width: 768px) {
 
     .cont-quote-gallery__home {
         display: flex;
